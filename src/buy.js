@@ -1,33 +1,41 @@
 import getAllListings from './get-all-listings.js';
 const allListings = getAllListings();
 
-console.log(allListings);
+// console.log(allListings);
 
-const showListings = document.getElementById('show-all-listings');
+const tbody = document.getElementById('tbody');
 
 for(let i = 0; i < allListings.length; i++) {
     const listing = allListings[i];
 
-    const title = document.createElement('p');
-    title.textContent = listing.title;
-    showListings.appendChild(title);
-    
-    const category = document.createElement('p');
-    category.textContent = listing.category;
-    showListings.appendChild(category);
-    
-    // const imageUrl = document.createElement('p');
-    // imageUrl.textContent = listing.imageUrl;
-    // showListings.appendChild(imageUrl);
-    
-    const description = document.createElement('p');
-    description.textContent = listing.description;
-    showListings.appendChild(description);
-    
-    const condition = document.createElement('p');
-    condition.textContent = listing.condition;
-    showListings.appendChild(condition);
+    const tr = document.createElement('tr');
 
-    console.log(category.title);
+    const title = document.createElement('td');
+    title.textContent = listing.title;
+    tr.appendChild(title);
+    
+    const category = document.createElement('td');
+    category.textContent = listing.category;
+    tr.appendChild(category);
+    
+    const image = document.createElement('td');
+    const imageUrl = document.createElement('img');
+    imageUrl.src = listing.imageUrl;
+    imageUrl.classList.add('table-image');
+    image.appendChild(imageUrl);
+    tr.appendChild(image);
+    
+    
+    // const description = document.createElement('td');
+    // description.textContent = listing.description;
+    // tr.appendChild(description);
+    
+    // const condition = document.createElement('p');
+    // condition.textContent = listing.condition;
+    // tr.appendChild(condition);
+
+    // console.log(imageUrl.src);
+
+    tbody.appendChild(tr);
 
 }
