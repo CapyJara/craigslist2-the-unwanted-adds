@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: rgb(136, 19, 19);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    top: 22px;
+    color: white;
+}
+
+nav {
+    margin-top: 40px;
+    padding: 5px;
+}
+
+main {
+    margin: 20px;
+}
+
+#link-row {  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: rgb(238, 125, 59);
+
+}
+
+#input-image-url {
+    display: block;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#links {
+    border: 3px solid rgb(102, 56, 14);
+    width: 80px;
+    text-align: center;
+    outline: 0;
+    border-radius: 10px;
+    background: #000;
+}
+
+#links:hover {
+    background: white;
+    color: black;
+}
+
+#links:active {
+    background: #999;
+}
+
+label {
+    margin: 5px;
+}
+
+#radio-block {
+    display: block;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+}
+
+fieldset {
+    padding: 10px;
+    margin: 20px 0 20px 0;
+}
+
+#home-description {
+    text-align: center;
+    border: 2px solid rgb(15, 93, 15);
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    
+}
+
+button {
+    padding: 5px;
+    outline: none;
+}
+
+button:active {
+    background: lightgray;
+}

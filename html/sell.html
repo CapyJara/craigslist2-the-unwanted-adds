@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>Curlilist - The Unwanted Adds</h1>
+        <nav id="link-row">
+            <a id="links" href="./home.html">Home</a>
+            <a id="links" href="./sell.html">Sell</a>
+            <a id="links" id="links" href="./buy.html">Buy</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2>Sell Stuff</h2>
+
+        <form id="form">
+
+            <label>
+                Add Title <input type="text" name="post-name" id="title">
+            </label>
+            <label>
+                <select name="category"> Category
+                    <option value="">--Please Choose An Category--</option>
+                    <option value="clothing">Clothing </option>
+                    <option value="home-made">Home Made</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="misc">Misc</option>
+                </select>
+            </label>
+
+            <label id="input-image-url">
+                Input Image URL<input type="url" name="imageUrl" id="image-input">
+            </label>
+
+            <fieldset>
+                
+                <legend>DESCRIPTION</legend>
+                
+                <textarea name="description" id="" cols="100" rows="10"></textarea>
+
+                <section id="radio-block">
+
+                    <label class="radio">
+                        <input value="pungent" type="radio" name="condition" id="condition"> PungAnt (Decent)
+                    </label>
+    
+                    <label class="radio">
+                        <input value="narli" type="radio" name="condition" id="condition"> Narli (Bad)
+                    </label>
+    
+                    <label class="radio">
+                        <input value="grodes" type="radio" name="condition" id="condition"> GrodesMcModes (Rank nasty shit!)
+                    </label>
+                </section>
+
+            </fieldset>
+
+            <button id="submit">Sell yo stuff</button>
+            
+        </form>
+        
+
+    </main>
+<script type="module" src="../src/sell.js">  </script>
+</body>
+</html>

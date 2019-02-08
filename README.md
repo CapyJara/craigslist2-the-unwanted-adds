@@ -1,2 +1,5 @@
 # craigslist2-the-unwanted-adds
-posting items for sale, viewing items
+
+home page
+posting items for sale
+viewing items for purchase
