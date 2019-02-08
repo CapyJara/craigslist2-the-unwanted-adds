@@ -95,3 +95,9 @@ button {
 button:active {
     background: lightgray;
 }
+
+#show-all-listings {
+    display: flex;
+    display: row;
+    justify-content: space-evenly;
+}

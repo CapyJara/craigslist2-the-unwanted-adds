@@ -1,3 +1,5 @@
+import getAllListings from './get-all-listings.js';
+
 const form = document.getElementById('form');
 
 form.addEventListener('submit', function(event) {
@@ -14,15 +16,7 @@ form.addEventListener('submit', function(event) {
     window.localStorage.setItem('allListings', serialize); 
 });
 
-// This function finds the allListings array in localStorage
-function getAllListings() {
-    const json = window.localStorage.getItem('allListings');
-    let allListings = [];
-    if(json) {
-        allListings = JSON.parse(json);
-    }
-    return allListings;
-}
+
 
 // This function makes the addListing object
 function makeObject(form) {
