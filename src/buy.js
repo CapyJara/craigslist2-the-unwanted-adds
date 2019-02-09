@@ -11,7 +11,10 @@ for(let i = 0; i < allListings.length; i++) {
     const tr = document.createElement('tr');
 
     const title = document.createElement('td');
-    title.textContent = listing.title;
+    const a = document.createElement('a');
+    a.href = 'itemListing.html?title=' + encodeURIComponent(listing.title);
+    a.textContent = listing.title;
+    title.appendChild(a);
     tr.appendChild(title);
     
     const category = document.createElement('td');

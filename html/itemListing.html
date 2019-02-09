@@ -23,21 +23,34 @@
 
         <h2>Item Listing</h2>
 
-        <dl>
-            <dt>Item Title:</dt>
-            <dd id="title"></dd>
-            <dt>Image:</dt>
-            <dd id="image"></dd>
-            <dt>Descriptiong:</dt>
-            <dd id="description"></dd>
-            <dt>Condition:</dt>
-            <dd id="condition"></dd>
+        <fieldset id="title-box">
+            <legend>Listing Title:</legend>
+        
+            <section id="title"></section>
 
-        </dl>
+        </fieldset>
 
+        <fieldset id="description-box">
+            <legend>Description</legend>
 
-        <section>
-        </section>
+            <section id="description"></section>
+            
+        </fieldset>
+        
+        <fieldset id="condition-box">
+            <legend>Condition</legend>
+            
+            <section id="condition"></section>
+
+        </fieldset>
+
+        <fieldset id="image-box">
+            <legend>Your Image</legend>
+            
+            <section> <img id="image" src="" alt="oops"></section>
+        </fieldset>
+            
+        <button id="remove">Remove Listing</button>
 
     </main>
 <script type="module" src="../src/itemListing.js">  </script>

@@ -38,7 +38,7 @@ main {
 }
 
 a {
-    color: aliceblue;
+    color: rgb(27, 115, 192);
     text-decoration: none;
 }
 
@@ -103,4 +103,38 @@ p {
 
 .table-image {
     height: 100px;
+}
+
+#image {
+    height: 120px;;
+}
+
+#title-box {
+    width: 600px;
+}
+
+#image-box {
+    width: 130px;
+    position: relative;
+    bottom: 203px;
+}
+
+#description-box {
+    width: 400px;
+    height: 80px;;
+    position: relative;
+    left: 200px;
+    top: 0px;
+}
+
+#condition-box {
+    width: 400px;
+    position: relative;
+    left: 200px;
+    bottom: 18px;
+}
+
+#remove {
+    position: relative;
+    bottom: 200px;
 }

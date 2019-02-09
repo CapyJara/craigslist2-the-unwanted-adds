@@ -14,6 +14,8 @@ form.addEventListener('submit', function(event) {
 
     const serialize = JSON.stringify(allListings);
     window.localStorage.setItem('allListings', serialize); 
+
+    window.location = '../html/buy.html';
 });
 
 
